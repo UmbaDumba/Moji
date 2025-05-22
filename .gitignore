@@ -12,10 +12,22 @@
 /[Uu]ser[Ss]ettings/
 *.log
 # cache folder
-/PackageCache/*
-#jajong
-*.dylib
-*.tgz
+/PackageCache/
+# Exclude specific large files & packages causing GitHub push errors
+# Vuforia package
+Packages/com.ptc.vuforia.engine-*.tgz
+
+# Unity Burst Compiler Runtime DLL/so files
+Library/PackageCache/com.unity.burst@*/.Runtime/
+
+# Vuforia plugin OSX dylib
+Library/PackageCache/com.ptc.vuforia.engine@*/Vuforia/Plugins/OSXUniversal/universal/libVuforiaEngine.dylib
+
+# LARGE 3D Model Example (Astronaut ...)
+Assets/SamplesResources/AugmentationAssets/Models/*.FBX
+
+# .etc Artifact file
+Library/ArtifactDB
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
