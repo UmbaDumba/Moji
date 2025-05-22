@@ -10,10 +10,10 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
-
-# cache folder
-/PackageCache/
 *.log
+# cache folder
+/PackageCache/*
+#jajong
 *.dylib
 *.tgz
 # MemoryCaptures can get excessive in size.
