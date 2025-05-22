@@ -11,7 +11,9 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 *.log
-
+My project/Library/PackageCache/com.unity.burst@59eb6f11d242/.Runtime/libburst-llvm-18.dylib
+My project/Library/PackageCache/com.unity.burst@59eb6f11d242/.Runtime/libburst-llvm-19.dylib
+My project/Packages/com.ptc.vuforia.engine-11.2.4.tgz
 # cache folder
 /PackageCache/
 
