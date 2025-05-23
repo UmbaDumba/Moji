@@ -24,6 +24,9 @@
 *.wav
 *.psd
 
+*.tgz
+./Assets/SamplesResources/
+
 # Exclude specific large files & packages causing GitHub push errors
 # Vuforia package
 Packages/com.ptc.vuforia.engine-*.tgz
