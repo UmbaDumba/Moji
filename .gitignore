@@ -11,8 +11,19 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 *.log
+
 # cache folder
 /PackageCache/
+
+[Ll]ibrary/
+[Tt]emp/
+[Bb]uild/
+[Bb]uilds/
+.obj/
+*.mp4
+*.wav
+*.psd
+
 # Exclude specific large files & packages causing GitHub push errors
 # Vuforia package
 Packages/com.ptc.vuforia.engine-*.tgz
