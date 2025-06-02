@@ -7,7 +7,7 @@ person_detector = YOLO("yolov8s.pt")
 eye_model = YOLO("runs/eye_yolo_train/weights/best.pt")
 
 # 홍길동 벡터 준비
-hong_embedding = DeepFace.represent(img_path=r"C:\Users\user\Moji\test\images\u7_jpg.rf.e313c4ab387ad6ee0ca70414619e6c9c.jpg", model_name="Facenet")[0]["embedding"]
+hong_embedding = DeepFace.represent(img_path=r"C:\Users\IoT33\Moji\test\images\u7_jpg.rf.e313c4ab387ad6ee0ca70414619e6c9c.jpg", model_name="Facenet")[0]["embedding"]
 
 # 웹캠
 cap = cv2.VideoCapture(2)
@@ -31,7 +31,7 @@ while True:
         person_crop = frame[y1:y2, x1:x2]
         try:
             # 2단계: 얼굴 유사도 비교
-            result = DeepFace.verify(person_crop, "./woo_dataset/test/images/u7_jpg.rf.e313c4ab387ad6ee0ca70414619e6c9c.jpg", model_name="Facenet", enforce_detection=False)
+            result = DeepFace.verify(person_crop, hong_embedding, model_name="Facenet", enforce_detection=False)
 
             if result["verified"] and result["distance"] < 0.4:  # threshold 조정 가능
                 # WOO라면 눈 탐지
