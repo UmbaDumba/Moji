@@ -1,0 +1,12 @@
+train: /workspace/Moji/image_eye/train
+val: /workspace/Moji/image_eye/val
+
+nc: 2
+names: ['eye', 'iris']
+
+roboflow:
+  workspace: moji-dkoad
+  project: detection-open-eyes-z7bdi
+  version: 2
+  license: CC BY 4.0
+  url: https://app.roboflow.com/moji-dkoad/detection-open-eyes-z7bdi/2
